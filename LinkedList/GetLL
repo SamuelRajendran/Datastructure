@@ -1,0 +1,32 @@
+public Node get(int index){
+
+// first we have to conform index range is under the given input
+ if(index <0 || index >=length){
+ return null;
+ }
+    Node temp=Head;
+    for(int i=0;i< index;i++){
+    temp=temp.next;
+    }
+    return temp;
+    }
+
+    //output
+
+    package LinkedList;
+
+    public class LLMain {
+        public static void main(String[] args) {
+            LL myLL=new LL(1);
+
+            myLL.appendlist(5);
+            myLL.appendlist(6);
+            myLL.appendlist(8);
+
+
+            System.out.println(myLL.get(2).value);
+
+
+        }
+
+    }
