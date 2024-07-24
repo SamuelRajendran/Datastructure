@@ -1,0 +1,16 @@
+Time complexity is O(1)-->Constant
+public void prepend(int value){
+Node newnode= new Node(value);
+    if(length==0)
+    {
+    Head=newnode;
+    Tail=newnode;
+
+    }else{
+    newnode.next=Head;
+    Head=newnode;
+
+    }length++;
+
+}
+
