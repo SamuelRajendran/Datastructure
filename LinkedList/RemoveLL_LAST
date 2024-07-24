@@ -1,0 +1,39 @@
+ public Node removelist(){
+
+        if(length==0){
+            return null;
+        }
+        Node temp=Head;
+        Node pre=Head;
+        if(temp.next!=null){
+            pre =temp;
+            temp=temp.next;
+        }
+        Tail=pre;
+        Tail.next=null;
+        length --;
+        if(length==0){
+            Head=null;
+            Tail=null;
+        }
+        return temp;
+
+
+        //ouput
+        package LinkedList;
+
+public class LLMain {
+    public static void main(String[] args) {
+        LL myLL=new LL(1);
+
+        myLL.appendlist(5);
+        myLL.appendlist(6);
+
+        System.out.println(myLL.removelist().value);
+        System.out.println(myLL.removelist().value);
+        System.out.println(myLL.removelist());
+
+    }
+}
+
+
