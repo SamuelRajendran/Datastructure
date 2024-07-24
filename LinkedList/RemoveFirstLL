@@ -1,0 +1,37 @@
+public Node RemoveFirst(){
+//if list is empty means do this
+if(length==0)return null;
+
+//multiple item in the list
+
+    Node temp=Head;
+    Head=Head.next;
+    temp.next=null;
+
+    length--; //If it has one item in the list
+    if(length==0){
+    Tail=null;
+    }
+    return temp;
+    }
+    /output
+    package LinkedList;
+
+    public class LLMain {
+        public static void main(String[] args) {
+            LL myLL=new LL(1);
+
+            myLL.appendlist(5);
+            myLL.appendlist(6);
+            myLL.appendlist(8);
+
+
+            System.out.println(myLL.RemoveFirst().value);
+            System.out.println(myLL.RemoveFirst().value);
+            System.out.println(myLL.RemoveFirst().value);
+            System.out.println(myLL.RemoveFirst());
+
+        }
+    }
+
+
