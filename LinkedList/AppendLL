@@ -1,0 +1,21 @@
+package LinkedList;
+
+public class Append {
+    //Time complexity is O(1)-->constant
+
+    //always look for if list is empty -->
+    
+    public void appendlist(int value){
+        Node newnode =new Node(value);
+
+        if(length==0){
+            Head=newnode;
+            Tail=newnode;
+        }else{
+            Tail.next=newnode;
+            Tail=newnode;
+        }
+        length ++;
+
+        }
+    }
