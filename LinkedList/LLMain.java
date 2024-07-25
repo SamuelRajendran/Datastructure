@@ -7,8 +7,7 @@ public class LLMain {
         myLL.appendlist(5);
         myLL.appendlist(6);
         myLL.appendlist(8);
-        myLL.insert(3,9);
-        myLL.insert(1,44);
+        myLL.remove(2);
 
     myLL.Display();
 

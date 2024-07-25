@@ -138,6 +138,30 @@ public class LL {
         length++;
         return true;
     }
+    public Node remove(int index){
+
+        if(index < 0 || index >=length){
+            return null;
+        }
+
+        if(index ==0){
+            return RemoveFirst();
+        }
+
+        if(index ==length){
+            return removelist();
+        }
+
+
+        Node pre=get(index-1);
+        Node temp=pre.next;
+
+        pre.next=temp.next;
+        temp.next=null;
+        length --;
+        return temp;
+    }
+
 
 
 
