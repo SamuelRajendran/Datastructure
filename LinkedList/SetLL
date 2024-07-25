@@ -1,5 +1,5 @@
 public boolean set(int index,int value){
-    Node temp =get(index);
+    Node temp =get(index); //here we concise the method by using the set method.
     if(temp!=null){
     temp.value=value;
     return true;
