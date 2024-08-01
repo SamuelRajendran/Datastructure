@@ -1,0 +1,8 @@
+BODMAS precedence refers to the order in which operations should be performed in a mathematical expression to ensure accurate results. BODMAS is an acronym that stands for:
+
+B: Brackets
+O: Orders (i.e., powers and roots, such as squares and square roots)
+D: Division
+M: Multiplication
+A: Addition
+S: Subtraction
