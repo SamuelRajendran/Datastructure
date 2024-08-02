@@ -19,3 +19,15 @@ public class PalindromicArray {
         return true;
     }
 }
+
+/*Algo
+
+-->loop
+-->single element copy
+-->variable declare to reversed item to store
+-->while to check the current item
+-->reverse mrthod rev*10 + arr[I]%10-->to take last element
+-->to cut the value of element by using element/10;
+-->check by if statement copy element and reversed element I  same  true or not
+
+*/
