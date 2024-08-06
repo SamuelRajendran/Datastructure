@@ -1,5 +1,5 @@
 package School_problemsGFG;
-
+//using Exor operator
 public class Findunique {
     public static void main(String[] args) {
         int [] arr={2,3,3,1,2,1,6};
